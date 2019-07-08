@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Righteous&display=swap');
+@font-face {
+    font-family: 'KoolBean';
+    src: url('../css/KoolBean.ttf');
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/mick-fanning.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 2px;
+    padding: 2rem;
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar #navbar-logo-container{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+#navbar-menu{
+    text-decoration: none;
+    font-family: 'KoolBean';
+    color: rgb(43, 140, 170);
+    font-size: 4rem;
+}
+
+#navbar-logo{
+    
+    margin-right: 1rem;
+}
+
+.navbar-link{
+    padding: 0.5rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: grey;
+    font-size: 1rem;
+}
+
+.navbar-link:hover{
+    border-radius: 0.2rem;
+    background-color: rgb(43, 140, 170);
+    text-decoration: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.33) 0px 0px 5px 2px;
+}
+
+#main-cards-menu-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFF;
+}
+
+.main-cards{
+    box-shadow: 0 2px 5px 0 rgba(74,74,74,.2);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 27%;
+    color: grey;
+    border-radius: 0.5rem;
+}
+
+.main-cards-logo-container{
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 0.5rem;
+}
+
+.main-cards-content-container{
+    padding-left: 1rem;
+}
+
+.main-cards-content-container h2{
+    font-size: 120%;
+}
+
+.main-cards-logo-container img{
+    padding: 2rem;
+}
+
+svg{
+    margin-top: 30%;
+} 
