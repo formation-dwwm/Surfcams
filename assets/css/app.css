@@ -78,6 +78,12 @@ body{
     border-radius: 0.5rem;
 }
 
+
+.main-cards:hover{
+    transform: scale(1.01);
+    box-shadow: 0 2px 5px 0 rgba(74,74,74,.4);
+}
+
 .main-cards-logo-container{
     width: 33.333%;
     display: flex;
@@ -179,74 +185,18 @@ iframe{
     border-radius: 0.5rem;
 }
 
-
-#menu {
-  cursor: pointer; 
-  position: absolute;
-  right: 4rem;
+#webcam-menu-title{
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-family: 'Open Sans';
+    font-weight: bold
 }
 
-#menu span, #menu span:before, #menu span:after {
-  cursor: pointer;
-  height: 2px;
-  width: 35px;
-  background: rgb(43, 140, 170);
-  position: absolute;
-  display: block;
-  content: '';
-  transition: all 0.5s ease-in-out;
-}
-
-#menu span:before {
-  animation: undo-top .5s forwards;
-}
-
-#menu span:after {
-  bottom: -10px;
-  animation: undo-bottom .5s;
-}
-
-#menu.active span {
-  background-color: transparent;
-}
-
-#menu.active span:before {
-  top: 0;
-}
-
-#menu.active span:before {
-  transform: translateY(0px);
-  animation: top-x .5s forwards;
-}
-
-#menu.active span:after {
-  transform: translateY(0px);
-  animation: bottom-x .5s forwards;
-}
-
-@keyframes top-x {
-  0% { transform: translateY(-10px) rotate(0); }
-  50% { transform: translateY(0px) rotate(0); }
-  100% { transform: translateY(0px) rotate(45deg); }
-}
-
-@keyframes bottom-x {
-  0% { transfrom: translateY(0) rotate(0); }
-  50% { transform: translateY(-10px) rotate(0); }
-  100% { transform: translateY(-10px) rotate(-45deg); }
-}
-
-@keyframes undo-top { 
-  0% { transform: translateY(0px) rotate(45deg); }
-  50% { transform: translateY(0px) rotate(0); }
-  100% { transform: translateY(-10px) rotate(0); }
-}
-
-@keyframes undo-bottom {
-  
-  0% { transform: translateY(-10px) rotate(-45deg); }
-  50% { transform: translateY(-10px) rotate(0); }
-  100% { transfrom: translateY(0px) rotate(0); }
+#webcam-menu-title img{
+    margin-right: 1rem;
 }
 
 #mention-container{
@@ -256,7 +206,69 @@ iframe{
     flex-direction: column;
 }
 
-.carouselExampleIndicators{
+#carouselExampleIndicators{
+    background-color: #FFF;
+}
+
+.carousel-indicators{
+    z-index: 10;
+}
+
+.carousel-indicators li{
+    background-color: rgb(43, 140, 170); 
+}
+
+.d-flex{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.webcams-cards-container{
+    background-color: #FFF;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     box-shadow: 0 2px 5px 0 rgba(74,74,74,.2);
-    border-radius: 2rem;
+}
+
+.webcams-cards-image{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 300px;
+    max-height: 300px;
+}
+
+.webcams-cards-content h3{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 100%;
+    color: grey;
+}
+
+.webcams-cards-container:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px 0 rgba(74,74,74,.4);
+}
+
+.webcams-cards-modal-link:hover{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+#brutal-beach-webcam-link{
+    width: 100%;
 }

@@ -10,9 +10,12 @@ require('../css/app.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
+window.setInterval(function() {
+  reloadImg()
+}, 500);
 
-var menu = document.querySelector( "#menu" )
+function reloadImg() {
+let ref = document.getElementById('brutal-beach-webcam-link');
 
-menu.addEventListener( "click", function(){
-  this.classList.toggle( "active" );
-});
+ref.src = 'http://nexpa.ddns.net:8080/tmpfs/auto.jpg?rnd='+ Math.random();
+}
