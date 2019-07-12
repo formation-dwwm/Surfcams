@@ -2,8 +2,16 @@
 
 {% block body %}
 
-<div id="webcam-menu-title">
-<img src="./../images/camera.png"><h1>Page des webcams</h1>
+<div id="webcam-menu-title" class="d-flex">
+<p></p>
+<div class="d-flex align-items-center"><img src="./../images/camera.png"><h1>Les Webcams</h1></div>
+<div class="flipswitch">
+    <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+    <label class="flipswitch-label" for="fs">
+        <div class="flipswitch-inner"></div>
+        <div class="flipswitch-switch"></div>
+    </label>
+</div>
 </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -15,6 +23,51 @@
     <div class="carousel-item active">
 
         <div class="d-flex">
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/PinRo.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>Pin Rolland</h3>
+                    </div>
+            </div>
+        </a>
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/porti.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>Portissol</h3>
+                    </div>
+            </div>
+        </a>
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/cap.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>Le Cap</h3>
+                    </div>
+            </div>
+        </a>
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/laverne.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>La Verne</h3>
+                    </div>
+            </div>
+        </a>
+
+        
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="d-flex">
+
+
         <a data-toggle="modal" data-target="#BrutalBeach" class="webcams-cards-modal-link">
             <div class="webcams-cards-container">
                 <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
@@ -45,12 +98,31 @@
 
         <a href="/" class="webcams-cards-modal-link">
             <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/porti.jpg" alt="...">
+                <img class="webcams-cards-image" src="./../images/favière.jpg" alt="...">
                     <div class="webcams-cards-content">
-                        <h3>Portissol</h3>
+                        <h3>La Favière</h3>
                     </div>
             </div>
         </a>
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/Lido.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>Le Lido</h3>
+                    </div>
+            </div>
+        </a>
+
+        <a href="/" class="webcams-cards-modal-link">
+            <div class="webcams-cards-container">
+                <img class="webcams-cards-image" src="./../images/rencros.jpg" alt="...">
+                    <div class="webcams-cards-content">
+                        <h3>René Cros</h3>
+                    </div>
+            </div>
+        </a>
+
         </div>
     </div>
 
@@ -58,58 +130,18 @@
         <div class="d-flex">
         <a href="/" class="webcams-cards-modal-link">
             <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
+                <img class="webcams-cards-image" src="./../images/rencros.jpg" alt="...">
                     <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
+                        <h3>René Cros</h3>
                     </div>
             </div>
         </a>
 
         <a href="/" class="webcams-cards-modal-link">
             <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
+                <img class="webcams-cards-image" src="./../images/fabreg.jpg" alt="...">
                     <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
-                    </div>
-            </div>
-        </a>
-
-        <a href="/" class="webcams-cards-modal-link">
-            <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
-                    <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
-                    </div>
-            </div>
-        </a>
-
-        <a href="/" class="webcams-cards-modal-link">
-            <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
-                    <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
-                    </div>
-            </div>
-        </a>
-        </div>
-    </div>
-
-    <div class="carousel-item">
-        <div class="d-flex">
-        <a href="/" class="webcams-cards-modal-link">
-            <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
-                    <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
-                    </div>
-            </div>
-        </a>
-
-        <a href="/" class="webcams-cards-modal-link">
-            <div class="webcams-cards-container">
-                <img class="webcams-cards-image" src="./../images/brutal.jpg" alt="...">
-                    <div class="webcams-cards-content">
-                        <h3>Brutal Beach</h3>
+                        <h3>Fabregas</h3>
                     </div>
             </div>
         </a>
