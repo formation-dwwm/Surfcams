@@ -4,6 +4,21 @@
 
 
 
-<div id="windy-widget"><h1>Les Prévisions</h1><iframe width="100%" height="700" src="https://embed.windy.com/embed2.html?lat=43.081&lon=5.751&zoom=9&level=surface&overlay=wind&menu=&message=&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&detailLat=43.103&detailLon=5.761&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe></div>
+<div id="windy-widget"><div class="d-flex align-items-center" id="windy-widget-title"><img src="./../images/sea.png"><h1>Les Prévisions</h1></div><iframe width="100%" height="700" src="https://embed.windy.com/embed2.html?lat=43.081&lon=5.751&zoom=9&level=surface&overlay=wind&menu=&message=&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&detailLat=43.103&detailLon=5.761&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe></div>
 
+<style>
+
+#windy-widget{
+    padding-top: 8rem !important;
+}
+
+#windy-widget-title{
+    padding-bottom: 1rem;
+}
+
+#svg{
+    visibility: hidden;
+    position: absolute;
+    }
+</style>
 {% endblock %}
