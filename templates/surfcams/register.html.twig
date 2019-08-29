@@ -12,6 +12,11 @@
    <title>Page de creation de compte</title>
 </head>
 
+{% if error != NULL %}         
+<div class="alert alert-danger w-100 m-auto">{{ error }}</div> 
+{% elseif success == true %}      
+ <div class="alert alert-success w-25 m-auto d-flex flex-column justify-content-center align-items-center" role="alert">{{ success }}<button type="button" class="btn btn-success" style="margin-top: 1rem;"><a href="/Login" style="color: #FFF; text-decoration: none;">Continuer vers le login</a></button></div>  
+ {% endif %}
 <body>
 <form action="/Register" method="post" class="w-25 mx-auto">
 <div class="d-flex justify-content-around align-items-center" id="card-header"><img src="./../img/logo_wave.png" width="64px"><h1>INSCRIPTION</h1></div>
@@ -39,11 +44,7 @@
 </div>
 </form>
 
-{% if error != NULL %}         
-<div class="alert alert-danger w-25 m-auto">{{ error }}</div> 
-{% elseif success == true %}      
- <div class="alert alert-success w-25 m-auto d-flex flex-column justify-content-center align-items-center" role="alert">{{ success }}<button type="button" class="btn btn-success" style="margin-top: 1rem;"><a href="/Login" style="color: #FFF; text-decoration: none;">Continuer vers le login</a></button></div>  
- {% endif %}
+
 
 </body>
 

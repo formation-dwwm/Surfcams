@@ -3,7 +3,7 @@
     {
         $db = new PDO('mysql:host=localhost:3306;dbname=surfcams', 'root', '');
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        // echo "connexion sucessfull";
+        //echo "connexion sucessfull";
     }
     catch (PDOException $e)
     {

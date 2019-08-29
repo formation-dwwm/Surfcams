@@ -12,6 +12,11 @@
    <title>Page de connexion</title>
 </head>
 
+{% if error != NULL %}         
+<div id="mange-ma-queue" class="alert alert-danger w-100 m-auto">{{ error }}</div> 
+{% elseif success == true %}      
+ <div class="alert alert-success w-25 m-auto d-flex flex-column justify-content-center align-items-center" role="alert">{{success}}</div>   
+ {% endif %}
 <body>
     <form action="/Login" method="post" class="w-25 mx-auto">
         <div class="d-flex justify-content-around align-items-center" id="card-header"><img src="./../img/logo_wave.png" width="64px"><h1>CONNEXION</h1></div>
@@ -28,11 +33,6 @@
     </form>
     </div>
 
-{% if error != NULL %}         
-<div class="alert alert-danger w-25 m-auto">{{ error }}</div> 
-{% elseif success == true %}      
- <div class="alert alert-success w-25 m-auto d-flex flex-column justify-content-center align-items-center" role="alert">{{success}}</div>   
- {% endif %}
 </body>
 
 <style>
